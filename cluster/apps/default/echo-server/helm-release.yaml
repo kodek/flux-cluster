@@ -5,7 +5,7 @@ metadata:
   name: &app echo-server
   namespace: default
 spec:
-  interval: 5m
+  interval: 15m
   chart:
     spec:
       chart: kah-common-chart
@@ -14,14 +14,19 @@ spec:
         kind: HelmRepository
         name: k8s-at-home
         namespace: flux-system
-      interval: 5m
+      interval: 15m
   install:
     createNamespace: true
+    remediation:
+      retries: 5
+  upgrade:
+    remediation:
+      retries: 5
   values:
     global:
       nameOverride: *app
     controller:
-      replicas: 2
+      replicas: 1
       strategy: RollingUpdate
     image:
       repository: docker.io/jmalloc/echo-server
@@ -83,15 +88,7 @@ spec:
         tls:
           - hosts:
               - *host
-    # # FIXME: Uncomment this block to ensure multiple
-    # # replicas of the pod are scheduled on different nodes
-    # topologySpreadConstraints:
-    #   - maxSkew: 1
-    #     topologyKey: kubernetes.io/hostname
-    #     whenUnsatisfiable: DoNotSchedule
-    #     labelSelector:
-    #       matchLabels:
-    #         app.kubernetes.io/name: *app
+            secretName: "echo-server-tls"
     resources:
       requests:
         cpu: 50m
