@@ -48,6 +48,15 @@
     }
   ],
   "packageRules": [
+    {
+      "description": "Automerge minor updates",
+      "automerge": true,
+      "automergeType": "branch",
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
     // setup datasources
     {
       "matchDatasources": ["helm"],
