@@ -2,6 +2,12 @@
 version: "3"
 
 tasks:
+  events:
+    desc: Watch for new events
+    cmds:
+      - kubectl alpha events -A --watch
+    interactive: true
+    ignore_error: true
 
   verify:
     desc: Verify flux meets the prerequisites
