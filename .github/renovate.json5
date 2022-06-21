@@ -1,5 +1,6 @@
 {
   "enabled": true,
+  "includeForks": true,
   "semanticCommits": "enabled",
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
