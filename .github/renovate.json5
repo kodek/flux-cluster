@@ -52,6 +52,9 @@
       "description": "Automerge minor updates",
       "automerge": true,
       "automergeType": "branch",
+      "automergeSchedule": [
+        "schedule:daily"
+      ],
       "matchUpdateTypes": [
         "minor",
         "patch"
