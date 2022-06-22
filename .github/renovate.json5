@@ -1,5 +1,6 @@
 {
   "enabled": true,
+  "timezone": "America/Los_Angeles",
   "includeForks": true,
   "semanticCommits": "enabled",
   "dependencyDashboard": true,
@@ -53,7 +54,8 @@
       "automerge": true,
       "automergeType": "branch",
       "automergeSchedule": [
-        "schedule:daily"
+        // TODO: Figure out syntax to reuse "schedule:daily" preset.
+        "before 2am"
       ],
       "matchUpdateTypes": [
         "minor",
