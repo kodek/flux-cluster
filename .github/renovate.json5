@@ -53,10 +53,6 @@
       "description": "Automerge minor updates",
       "automerge": true,
       "automergeType": "branch",
-      "automergeSchedule": [
-        // TODO: Figure out syntax to reuse "schedule:daily" preset.
-        "before 2am"
-      ],
       "matchUpdateTypes": [
         "minor",
         "patch"
