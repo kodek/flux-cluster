@@ -6,7 +6,7 @@
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
   "suppressNotifications": ["prIgnoreNotification"],
-  "rebaseWhen": "conflicted",
+  "rebaseWhen": "auto",
   "schedule": ["every weekend"],
   "pre-commit": {
     "enabled": true
