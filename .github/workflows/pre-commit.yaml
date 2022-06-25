@@ -6,9 +6,9 @@ name: Pre-commit
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,5 +30,5 @@ jobs:
         # uses: pre-commit/action@646c83fcd040023954eafda54b4db0192ce70507
         uses: pre-commit/action@v3.0.0
         # with:
-          # options to pass to pre-commit run
-         # extra_args: # optional, default is --all-files 
+        # options to pass to pre-commit run
+        # extra_args: # optional, default is --all-files
