@@ -36,10 +36,10 @@ spec:
           traefik.ingress.kubernetes.io/router.middlewares: "networking-cloudflare-only@kubernetescrd"
         labels:
         hosts:
-          - &host "grafana.monitoring.${SECRET_DOMAIN}"
+          - &host "grafana.${SECRET_DOMAIN}"
         path: "/"
         tls:
-          - secretName: "grafana-monitoring-tls"
+          - secretName: "grafana-tls"
             hosts:
               - *host
   interval: 1m0s
