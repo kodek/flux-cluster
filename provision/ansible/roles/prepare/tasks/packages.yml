@@ -19,6 +19,7 @@
       - iputils-ping
       - ipvsadm
       - lvm2
+      - mailutils
       - nano
       - net-tools
       - nfs-common

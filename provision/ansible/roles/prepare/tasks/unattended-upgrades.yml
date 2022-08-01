@@ -18,6 +18,7 @@
         block: |
           Unattended-Upgrade::Automatic-Reboot "false";
           Unattended-Upgrade::Remove-Unused-Dependencies "true";
+          Unattended-Upgrade::Mail "{{ unattended_upgrade_email }}";
           Unattended-Upgrade::Allowed-Origins {
               "${distro_id} stable";
               "${distro_id} ${distro_codename}-security";
