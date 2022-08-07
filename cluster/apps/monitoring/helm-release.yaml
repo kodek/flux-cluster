@@ -13,7 +13,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: prometheus-community
-        namespace: kube-system
+        namespace: flux-system
   install:
     createNamespace: true
     remediation:
