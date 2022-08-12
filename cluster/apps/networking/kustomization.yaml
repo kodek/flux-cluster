@@ -6,4 +6,6 @@ resources:
   - cloudflare-ddns
   - external-dns
   - k8s-gateway
+  # TODO: Move this out of "apps"
+  - metallb-resources
   - traefik

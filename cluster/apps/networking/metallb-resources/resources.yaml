@@ -8,9 +8,6 @@ metadata:
 spec:
   addresses:
     - "$METALLB_LB_RANGE}"
-  dependsOn:
-    - name: metallb
-      namespace: metallb-system
 ---
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
@@ -21,8 +18,5 @@ metadata:
 spec:
   ipAddressPools:
     - my-ip-space
-  dependsOn:
-    - name: metallb
-      namespace: metallb-system
 status: {}
 ---
