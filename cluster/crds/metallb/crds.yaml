@@ -14,4 +14,4 @@ spec:
         kind: GitRepository
         name: metallb-crd-source
         namespace: flux-system
-      interval: 1hr
+      interval: 1h
