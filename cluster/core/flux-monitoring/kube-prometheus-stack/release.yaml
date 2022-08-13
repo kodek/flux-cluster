@@ -32,7 +32,7 @@ spec:
           volumeClaimTemplate:
             spec:
               volumeName: "prometheus-volume"
-              storageClassName: ""  # Unsetting default.
+              storageClassName: "longhorn"
               resources:
                 requests:
                   storage: 5Gi
@@ -47,7 +47,7 @@ spec:
           volumeClaimTemplate:
             spec:
               volumeName: "prometheus-volume"
-              storageClassName: ""  # Unsetting default.
+              storageClassName: "longhorn"
               resources:
                 requests:
                   storage: 10Gi
