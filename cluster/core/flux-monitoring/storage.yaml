@@ -11,7 +11,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: longhorn-static
+  storageClassName: longhorn
   csi:
     driver: driver.longhorn.io
     fsType: ext4
