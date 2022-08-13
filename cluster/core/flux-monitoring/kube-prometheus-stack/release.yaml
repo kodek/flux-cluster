@@ -32,6 +32,7 @@ spec:
           volumeClaimTemplate:
             spec:
               volumeName: "prometheus-volume"
+              storageClassName: ""  # Unsetting default.
               resources:
                 requests:
                   storage: 5Gi
@@ -46,6 +47,7 @@ spec:
           volumeClaimTemplate:
             spec:
               volumeName: "prometheus-volume"
+              storageClassName: ""  # Unsetting default.
               resources:
                 requests:
                   storage: 10Gi
