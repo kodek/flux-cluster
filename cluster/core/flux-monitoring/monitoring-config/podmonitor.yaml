@@ -7,9 +7,6 @@ metadata:
     app.kubernetes.io/part-of: flux
     app.kubernetes.io/component: monitoring
 spec:
-  namespaceSelector:
-    matchNames:
-      - flux-system
   selector:
     matchExpressions:
       - key: app
