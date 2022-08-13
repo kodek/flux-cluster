@@ -5,6 +5,7 @@ resources:
   - emberstack.yaml
   - external-dns.yaml
   - hajimari.yaml
+  - grafana-charts.yaml
   - longhorn.yaml
   - jetstack.yaml
   - k8s-at-home.yaml
