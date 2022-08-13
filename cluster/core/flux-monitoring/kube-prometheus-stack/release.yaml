@@ -31,9 +31,7 @@ spec:
         storage:
           volumeClaimTemplate:
             spec:
-              selector:
-                matchLabels:
-                  app.kubernetes.io/name: metrics-volume
+              volumeName: "prometheus-volume"
               resources:
                 requests:
                   storage: 5Gi
@@ -47,9 +45,7 @@ spec:
         storage:
           volumeClaimTemplate:
             spec:
-              selector:
-                matchLabels:
-                  app.kubernetes.io/name: metrics-volume
+              volumeName: "prometheus-volume"
               resources:
                 requests:
                   storage: 10Gi
