@@ -6,5 +6,5 @@ resources:
   - storage
   - default
   - kube-system
-  - monitoring
+  # - monitoring
   - networking
