@@ -27,13 +27,32 @@ spec:
   values:
     alertmanager:
       enabled: false
+      alertmanagerSpec:
+        storage:
+          volumeClaimTemplate:
+            spec:
+              selector:
+                matchLabels:
+                  app.kubernetes.io/name: metrics-volume
+              resources:
+                requests:
+                  storage: 5Gi
     prometheus:
       prometheusSpec:
-        retention: 48h
+        retention: 10d
         resources:
           requests:
             cpu: 200m
             memory: 200Mi
+        storage:
+          volumeClaimTemplate:
+            spec:
+              selector:
+                matchLabels:
+                  app.kubernetes.io/name: metrics-volume
+              resources:
+                requests:
+                  storage: 10Gi
         podMonitorNamespaceSelector: {}
         podMonitorSelector: {}
     grafana:
