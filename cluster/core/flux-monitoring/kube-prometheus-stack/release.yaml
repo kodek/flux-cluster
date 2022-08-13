@@ -28,7 +28,7 @@ spec:
     alertmanager:
       enabled: false
       alertmanagerSpec:
-        storage:
+        storageSpec:
           volumeClaimTemplate:
             spec:
               volumeName: "prometheus-volume"
@@ -42,7 +42,7 @@ spec:
           requests:
             cpu: 200m
             memory: 200Mi
-        storage:
+        storageSpec:
           volumeClaimTemplate:
             spec:
               volumeName: "prometheus-volume"
