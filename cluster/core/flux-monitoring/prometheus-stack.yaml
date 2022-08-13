@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: kube-prometheus-stack
+  namespace: monitoring
+spec:
+  interval: 1h
+  path: ./manifests/monitoring/kube-prometheus-stack
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-installation
+  timeout: 5m0s
+  wait: true
