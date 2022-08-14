@@ -18,7 +18,7 @@ spec:
     volumeAttributes:
       numberOfReplicas: '3'
       staleReplicaTimeout: '20'
-    volumeHandle: hajimari-config-volume
+    volumeHandle: hajimari-config
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
