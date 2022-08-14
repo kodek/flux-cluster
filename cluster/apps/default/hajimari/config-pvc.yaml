@@ -15,8 +15,7 @@ spec:
   csi:
     driver: driver.longhorn.io
     fsType: ext4
-    # TODO: Move to a permanent volume. We're just testing for now.
-    volumeHandle: test-vol
+    volumeHandle: hajimari
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
