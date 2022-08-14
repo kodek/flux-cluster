@@ -15,21 +15,19 @@ spec:
   csi:
     driver: driver.longhorn.io
     fsType: ext4
-    volumeAttributes:
-      numberOfReplicas: '3'
-      staleReplicaTimeout: '20'
-    volumeHandle: hajimari-config
+    # TODO: Move to a permanent volume. We're just testing for now.
+    volumeHandle: test-vol
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: hajimari-config-pvc
+  name: hajimari-config
   namespace: default
 spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: longhorn
-  volumeName: "hajimari-config-pv"
+  volumeName: hajimari-config-pv
   resources:
     requests:
       storage: 128Mi
