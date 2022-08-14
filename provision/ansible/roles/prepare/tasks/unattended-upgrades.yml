@@ -1,4 +1,16 @@
 ---
+- name: Set up mail relay
+  ansible.builtin.blockinfile:
+    path: "/root/.mailrc"
+    mode: 0600
+    create: true
+    block: |
+      set smtp-use-starttls
+      set ssl-verify=ignore
+      set smtp="{{ smtp.host }}"
+      set smtp-auth=login
+      set smtp-auth-user="{{ smtp.auth_user }}"
+      set smtp-auth-password="{{ smtp.auth_password }}"
 - block:
     - name: Copy 20auto-upgrades unattended-upgrades config
       ansible.builtin.blockinfile:
@@ -17,7 +29,9 @@
         create: true
         block: |
           Unattended-Upgrade::Automatic-Reboot "false";
+          Unattended-Upgrade::MailReport "on-change";
           Unattended-Upgrade::Remove-Unused-Dependencies "true";
+          Unattended-Upgrade::Sender "Unattended-Upgrades <root@{{ inventory_hostname }}>";
           Unattended-Upgrade::Mail "{{ unattended_upgrade_email }}";
           Unattended-Upgrade::Allowed-Origins {
               "${distro_id} stable";

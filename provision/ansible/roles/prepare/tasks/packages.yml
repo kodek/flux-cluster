@@ -27,6 +27,7 @@
       - open-iscsi
       - psmisc
       - smartmontools
+      - sendmail
       - socat
       - software-properties-common
       - unattended-upgrades
