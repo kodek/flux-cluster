@@ -39,7 +39,8 @@ spec:
       labels:
       hosts:
         - host: &host "portainer.${SECRET_DOMAIN}"
-          path: "/"
+          paths:
+            - path: "/"
       tls:
         - secretName: "portainer-tls"
           hosts:
