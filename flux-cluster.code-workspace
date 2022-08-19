@@ -14,6 +14,20 @@
         },
         "yaml.schemas": {
             "Kubernetes": "cluster/*.yaml"
+        },
+        "material-icon-theme.folders.theme": "classic",
+        "workbench.iconTheme": "material-icon-theme",
+        "material-icon-theme.folders.associations": {
+            ".github": "github",
+            ".taskfiles": "tasks",
+            ".vscode": "vscode",
+            "cluster": "kubernetes",
+            "cluster/apps": "app",
+            "cluster/charts": "packages",
+            "cluster/config": "config",
+            "cluster/core": "server",
+            "provision": "ansible",
+            "tmpl": "template",
         }
     }
 }
