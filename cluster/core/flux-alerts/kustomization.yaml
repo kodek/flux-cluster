@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - provider.yaml
   - alerts.yaml
+  - secret.sops.yaml
