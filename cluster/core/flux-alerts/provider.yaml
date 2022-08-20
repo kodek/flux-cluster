@@ -6,6 +6,6 @@ metadata:
   namespace: flux-system
 spec:
   type: telegram
-  channel: !!str ${SECRET_TELEGRAM_CHANNEL}
+  channel: ${SECRET_TELEGRAM_CHANNEL}
   secretRef:
     name: telegram-bot-token
