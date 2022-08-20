@@ -54,13 +54,7 @@ spec:
         podMonitorNamespaceSelector: {}
         podMonitorSelector: {}
     grafana:
-      grafana.ini:
-        auth.proxy:
-          enabled: true
-          header_name: cf-access-authenticated-user-email
-          header_property: email
-          auto_sign_up: true
-          enable_login_token: false
+      # TODO: Bypass auth via SSO, but allow admin access.
       ingress:
         enabled: true
         ingressClassName: "traefik"
