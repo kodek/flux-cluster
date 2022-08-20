@@ -1,0 +1,28 @@
+kind: Secret
+apiVersion: v1
+type: Opaque
+metadata:
+    name: mosquitto-config
+stringData:
+    mqtt.conf: ENC[AES256_GCM,data:RPN4JSZUwvjA7QgwqwCqDO3rOorw,iv:fTStIW895dETs/2ip4qR/7fGNCptMD5Q5xJFiFmXKI0=,tag:bgan6wnIkmXw/8XWn1ebnA==,type:str]
+    mosquitto_pwd: ENC[AES256_GCM,data:g7pLPjvglFIMYd7akJA=,iv:i6+1GN7Kt6EHgelPYnxXTWKokwVZIE2R3vA1qnPaK0k=,tag:53mz+1lGrZRbCz82jVCeEg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1s9mnf5d22h6cqgljqcaaxgpzza49tg4a4uv58naelwy690zvus4s4yj5d3
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhVmh3cDN1RjE5TllvNFRV
+            ZHhiZGpwU3NUSWFQV3Y4MzBQY3ozOGEwb2hzCkE3ai9Takh4bGFrT3RvSEZ1anlh
+            b0llS1NsY2VneThta2RoNGRxNmRFT2MKLS0tIFRFY094czk1R3M4THlCUENRcThK
+            WDB2cmVheWsrbmxhaXM0MzBETFUzcXcKCkgNd57FIi6RBDImmyiVjEr/Y887Kgls
+            P5ulICeyFZnv//PgkcDR8AosW0Dp8grb4YFkDKMQ7nGBV89DuZqvLw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2022-08-20T22:58:35Z"
+    mac: ENC[AES256_GCM,data:FTX+ndzWhnDlDOZKdXA4cJQnWrzDqQrNLb9+oXwoxAOsArKHH/MMsdz5xXruTpyezpezDwMBpIW+Co4IX+gZ6AohYsZiqZRpGpIGuQWq2MzbX1NKlX9Pb8/gIug8L87LNBQ9c2R2cXsmGbHX1rBXqe3Dmn0ynufcGfTufQaZRsw=,iv:z82H//rUnWRb+nfPIn0Q5EuitSeOEXaFGNy43EmSdw0=,tag:rLgVKUY0YE5yv/8ceM3NXA==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
