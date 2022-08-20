@@ -10,6 +10,7 @@ resources:
   - jetstack.yaml
   - k8s-at-home.yaml
   - k8s-gateway.yaml
+  - k8tz.yaml
   - metallb.yaml
   - metrics-server.yaml
   - prometheus-community.yaml
