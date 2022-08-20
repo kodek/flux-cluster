@@ -6,7 +6,9 @@ metadata:
   namespace: flux-system
 data:
   TIMEZONE: America/Los_Angeles
+  # Allow metallb to claim these IPs:
   METALLB_LB_RANGE: 192.168.2.220-192.168.2.230
+  # Use them for these entities:
   METALLB_K8S_GATEWAY_ADDR: 192.168.2.220
   METALLB_TRAEFIK_ADDR: 192.168.2.221
   METALLB_MOSQUITTO_ADDR: 192.168.2.222
