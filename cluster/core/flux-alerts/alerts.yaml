@@ -10,6 +10,6 @@ spec:
   eventSeverity: info
   eventSources:
     - kind: Kustomization
-      namespace: default
+      namespace: flux-system
       name: '*'
   suspend: false
