@@ -1,0 +1,22 @@
+---
+# A LoadBalancer service used so we can easily interact with Loki inside the network.
+apiVersion: v1
+kind: Service
+metadata:
+  name: loki
+  namespace: monitoring
+  annotations:
+    # Allow sharing so we can use the same IP for Prometheus or others.
+    metallb.universe.tf/allow-shared-ip: "monitoring-svc"
+spec:
+  ports:
+    - name: http
+      port: 3100
+      protocol: TCP
+      targetPort: 3100
+  selector:
+    # Taken from the http-metrics service created by the helm chart.
+    app: loki
+    release: loki-stack
+  type: LoadBalancer
+  loadBalancerIP: ${METALLB_MONITORING_ADDR}
