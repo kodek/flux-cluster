@@ -5,7 +5,7 @@ metadata:
     name: mosquitto-config
 stringData:
     mqtt.conf: ENC[AES256_GCM,data:RPN4JSZUwvjA7QgwqwCqDO3rOorw,iv:fTStIW895dETs/2ip4qR/7fGNCptMD5Q5xJFiFmXKI0=,tag:bgan6wnIkmXw/8XWn1ebnA==,type:str]
-    mosquitto_pwd: ENC[AES256_GCM,data:g7pLPjvglFIMYd7akJA=,iv:i6+1GN7Kt6EHgelPYnxXTWKokwVZIE2R3vA1qnPaK0k=,tag:53mz+1lGrZRbCz82jVCeEg==,type:str]
+    mosquitto_pwd: ENC[AES256_GCM,data:dR6VSU6mJ3kAc2+Cf1L1ZYwM8EDwbe75Ogb/A8n2ow8cm266MyZxEg/OoS1w0pMioSu8/lvR75xWj0wuNCM6HJLOihBkJBHBgdKms1tQT7hFYdXU3z8NLqPBsVb5lqk0Wh3tivZVHxjhpFyO95ZU20SNvO5e,iv:vfpI9DwkhEmo9ZI1xzkoNm5F8X4/bOj12B86zieEgHw=,tag:t9SpTRiotmI1B2D6dGQbSw==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -21,8 +21,8 @@ sops:
             WDB2cmVheWsrbmxhaXM0MzBETFUzcXcKCkgNd57FIi6RBDImmyiVjEr/Y887Kgls
             P5ulICeyFZnv//PgkcDR8AosW0Dp8grb4YFkDKMQ7nGBV89DuZqvLw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-08-20T23:29:20Z"
-    mac: ENC[AES256_GCM,data:aGSkfE4dpS949uutVEkKy2ZTWgZ7Vy8t+joKs6x5Gf9+yk0cTqg8fwUazQ7bLOcCIevri1ei33WlVdLF9HT4dq4B6zqudv7rRtLyM1r3griZdOWycFadQr5nZzRt35iESG7bmJOHdOczyGCYX0HjZmhvnwXOZ4Zy9bLhqmJDEdw=,iv:ZfKpAJBUEEmSzc0BNHhiTGMzqP7jOLbLw8Oty8yOZHc=,tag:s942MVElSbj4ePXj8V+EMQ==,type:str]
+    lastmodified: "2022-08-21T00:06:04Z"
+    mac: ENC[AES256_GCM,data:w4S6GpQxk7JdGsgcl4O8/jTmYHyV+DgEpZahvd0H+FI5AHDctAX6qggFAx3QGOZiuMU7rNvtX+qVltqMQG2b/ndgSvjqomtBatVFjrzPmJi2NjjPE5G3G8i4+yTuVXz3Xr5F353wVelDAqbmUkKN5y70/xwmrxLmhLAUwaN2rNk=,iv:jgFMraPU5UQAaTIaxN5E2KBq0PSya74sHKEDU1ognjA=,tag:lzYxVcAT57ip58PQCZUEvA==,type:str]
     pgp: []
     encrypted_regex: ^(data|stringData)$
     version: 3.7.3
