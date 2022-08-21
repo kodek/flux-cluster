@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - alerts.yaml
   - secret.sops.yaml
-  - telegram_provider.yaml
+  - telegram_providers.yaml
