@@ -5,7 +5,7 @@ metadata:
     name: mosquitto-config
 stringData:
     mqtt.conf: ENC[AES256_GCM,data:4TNHenCLOBCUglE2FH8WZP4kIXnbKddHvvzJeYgiyuW0evgpKjHCA05vJnH4XOq0yGn7Yyymn8IDFBQuJrgXl/0t2bVOyp4=,iv:aKOBbG9KTjrZ2W3oeFI2E0OKOkCat537dPA6nbmVNoc=,tag:E4tC/BmDFYSSDY+P617XbQ==,type:str]
-    mosquitto_pwd: ENC[AES256_GCM,data:8O3Si2wu+Cxdvrtmgp0JpyHe3OtD+WHfqOt2NHnGhPb8LvfyArYxzQvcOABYUCRT3xZsckP8xYbVmMovcU9AEpR2caU7MTuPQcpqKA2pkoMb38MqGrsqAeZy8ZSpJ6zAEzm3uc6FLLGeRESk3jqkXJsC9vhdakY5kqt/5pyxD3yJ70IufP373Jd8XmScRx15CKN9gvSDBLFbp5l88ophp7Hxke2LlvWUQ9Kq/cU1Q3uzZM3LEtSugdIOG89JkjmqZm2yJ69hM14Uw2L8dyw+fdKFni6Q9hwcBHaPvfJHOBidsfOC+l0y/jT0zOEM,iv:6ygvsGndR5/ekaUdsKSlTZxPodBTA3kX9GqHJlg46+8=,tag:Jfp/ER1xmlpXNsGFy8ExWg==,type:str]
+    mosquitto_pwd: ENC[AES256_GCM,data:FE+Kl0A1SsE5wTXJcCaOuQT62+XzHOMmbwF72ho3hee/2RtXnXShaM6sUz6y4L+qiouv1ZNpzTTxQ54IQCDDeyQFW9wsUggOafN1Tim1wfycHBCKlswA3fHQFPPQMMepeE4xEGcGGBmL6Z0omT65lQPyfLxwIIV1,iv:UkfsXOetTD+VxBg2GcF6Uyyt8agJPunyKapX5t1ZfMU=,tag:1OdS2wbNKnhwOmuc0zhQfQ==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -21,8 +21,8 @@ sops:
             WDB2cmVheWsrbmxhaXM0MzBETFUzcXcKCkgNd57FIi6RBDImmyiVjEr/Y887Kgls
             P5ulICeyFZnv//PgkcDR8AosW0Dp8grb4YFkDKMQ7nGBV89DuZqvLw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-08-21T01:02:55Z"
-    mac: ENC[AES256_GCM,data:YdR7Qvno5zHHR2hSxKCEMTRCFD9MP3SGIWNh8AHFdBFAvoENqn7gLtflMhtYnzQwo7ldIhy+AxLGcgrE2neKWhvZYXNTXqYtdXkgTJdQvKSBfZ/wAsuPpkUpeItZnOSlM6f1S+Fx7zJo2DJ4sWyhMsZi1Tk1L/DDJSskLVBKLy0=,iv:iJzgSXWDeyqscjvdBGt8Qtm2lGNaeefgOxBADrrVO9k=,tag:t0WJp09MZaLv8Ul1mptOxA==,type:str]
+    lastmodified: "2022-08-21T01:19:57Z"
+    mac: ENC[AES256_GCM,data:FvtqZNBezmBgRTEOdEoz0Jiv69doOs2kssCJdUpZq5R0QmQC9YLHaE/Ez7SX9pyS/sYji7hubukbvwEd6+lbrNTIlK6H3CagC2eMOKS7m1/UaqObVds5kkcmOOcUSyRSUUW8mTRK3R/44aHwHoj4ihF36wrTW6WuW0s5+gSEa8w=,iv:X9n8PVDTFdt0cK5HPl0vDKmvoz32jpWBYzhBItRr0Rw=,tag:OwdCe/iBsGkqQUYeLzmyTg==,type:str]
     pgp: []
     encrypted_regex: ^(data|stringData)$
     version: 3.7.3
