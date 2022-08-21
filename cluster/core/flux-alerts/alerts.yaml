@@ -2,12 +2,27 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Alert
 metadata:
-  name: all-kustomizations
+  name: all-kustomizations-info
   namespace: flux-system
 spec:
   providerRef:
-    name: telegram
+    name: telegram-info
   eventSeverity: info
+  eventSources:
+    - kind: Kustomization
+      namespace: flux-system
+      name: '*'
+  suspend: false
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: all-kustomizations-error
+  namespace: flux-system
+spec:
+  providerRef:
+    name: telegram-page
+  eventSeverity: error
   eventSources:
     - kind: Kustomization
       namespace: flux-system

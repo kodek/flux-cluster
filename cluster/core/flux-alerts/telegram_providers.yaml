@@ -1,0 +1,22 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: telegram-page
+  namespace: flux-system
+spec:
+  type: telegram
+  channel: ${SECRET_TELEGRAM_CHANNEL}
+  secretRef:
+    name: telegram-bot-token
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: telegram-info
+  namespace: flux-system
+spec:
+  type: telegram
+  channel: ${SECRET_TELEGRAM_CHANNEL}
+  secretRef:
+    name: telegram-bot-token
