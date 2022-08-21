@@ -23,6 +23,9 @@ k3s_server:
     - servicelb
     # Disable metrics-server - installed with Flux
     - metrics-server
+    # Disabled to address EOF errors. See
+    #   https://github.com/k3s-io/k3s/issues/5633#issuecomment-1181537311
+    - egress-selector-mode=disabled
   disable-network-policy: true
   disable-cloud-controller: true
   write-kubeconfig-mode: "644"
