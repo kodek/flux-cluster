@@ -3,6 +3,9 @@ kind: Kustomization
 namespace: monitoring
 resources:
   - podmonitor.yaml
+generatorOptions:
+  labels:
+    kustomize.toolkit.fluxcd.io/substitute: disabled
 configMapGenerator:
   - name: flux-grafana-dashboards
     files:
