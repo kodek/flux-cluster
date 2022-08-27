@@ -28,8 +28,7 @@ spec:
         enabled: true
         type: LoadBalancer
         annotations:
-          metallb.universe.tf/loadBalancerIPs: |-
-            ${METALLB_MOSQUITTO_ADDR}
+          coredns.io/hostname: "mqtt.internal.${SECRET_DOMAIN}"
         spec:
           externalTrafficPolicy: Local
     auth:

@@ -18,7 +18,7 @@ spec:
   values:
     fullnameOverride: k8s-gateway
     domain: "k3s.${SECRET_DOMAIN}"
-    ttl: 300
+    ttl: 1
     service:
       type: LoadBalancer
       port: 53
