@@ -39,6 +39,6 @@ repos:
       - id: check-renovate
         additional_dependencies: ['pyjson5']
   - repo: https://github.com/tarioch/flux-check-hook
-    rev: v0.2.0
+    rev: v0.3.0
     hooks:
       - id: check-flux-helm-values
