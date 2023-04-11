@@ -6,6 +6,10 @@
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
   "suppressNotifications": ["prIgnoreNotification"],
+  // Try to automerge everything.
+  "automerge": true,
+  "automergeType": "branch",
+
   "rebaseWhen": "auto",
   "extends": ["schedule:nonOfficeHours"],
   "pre-commit": {
